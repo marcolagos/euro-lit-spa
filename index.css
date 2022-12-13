@@ -1,0 +1,335 @@
+*{
+  margin:0;
+  padding:0;
+  transition: .33s ease all;
+}
+
+body{
+  margin:0;
+  font-size:10px;
+  color:#ffffff;
+  line-height:1.6;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+#showcase{
+  background-image:url('./assets/thinker.jpeg');
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:left;
+  text-align:left;
+  padding:0px 60px;
+}
+
+.showcase-text {
+  padding-left: 8vw;
+}
+
+#showcase h1{
+  font-size:30px;
+  line-height:1.2;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+.newspaper {
+	background: black;
+	padding: 5rem;
+	column-count: 2;
+	column-width: 250px;
+/*  columns: 250px 4; */
+	column-gap: 4rem;
+/* 	height: 450px; */
+	column-rule: 1px solid #b8b8b8;
+/* 	overflow: hidden; */ 
+	 column-fill: auto;
+}
+.newspaper h2 {
+	column-span: all;
+	margin: 0 0 1rem;
+  font-size: 25px;
+}
+.newspaper p {
+	margin-top: 0;
+  font-size: 15px;
+  line-height: 30px;
+}
+.newspaper p:first-of-type:first-letter {
+  color: gold;
+  float: left;
+  font-size: 50px;
+  line-height: 50px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 2px;
+}
+
+.line-divider {
+  position: relative;
+  text-align: center;
+}
+
+.line-divider:before {
+  content: '';
+  height: 1px;
+  width: 80%;
+  left: 10%;
+  display: block;
+  position: absolute;
+  background-color: rgb(187, 187, 187);
+}
+.line-divider.wide:before {
+  width: auto;
+  left: 50px;
+  margin: 0;
+  right: 50px;
+}
+
+.info-section {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.span-specific {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: rgb(207, 176, 0);
+  margin-bottom: 15px;
+}
+
+.h1-specific {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.p-specific {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+div.site {
+  background-color: #f2f2f2;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+
+div.container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+div.img {
+}
+
+div.text-container {
+  margin: 60px 45px 55px;
+}
+
+@media screen and (min-width: 768px) {
+ div.container {
+   flex-direction: row;
+    width: 100%;
+ }
+  
+  div.img {
+     height: 420px;
+     min-width: 360px;
+  }
+  
+  div.text-container {
+     margin: 0 20px;
+     max-width: 660px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.container {
+     max-width: 90vw;
+  }
+}
+
+.footer {
+  height: 60px;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+.container-two {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 0;
+  background-color: black;
+}
+article h1 {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: white;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+article .metadata {
+  margin-bottom: 1em;
+}
+article span {
+  font-family: Merriweather;
+  font-size: 1.5em;
+  font-weight: 400;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.250em
+}
+article p {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 1em;
+  letter-spacing: -0.0040em;
+  text-align: left;
+  text-indent: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  article p {
+    font-size: 1.5em;
+  }
+}
+
+.author {
+  font-size: 15px;
+}
+.date {
+  font-size: 15px;
+}
+
+.augustine {
+  background: url("./assets/augustine.png");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.apology {
+  background: url("./assets/socrates.jpeg");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.xenia {
+  background: url("./assets/bow.jpeg");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.comment {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-top: 0;
+  font-size: 10px;
+  width: 600px;
+}
+
+.comment-2 {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+  font-size: 10px;
+  width: 400px;
+}
+
+.img1 {
+  background-image: url("./assets/conversion.jpeg");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url("./assets/dante.jpeg");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.img3 {
+  background-image: url("./assets/aeneas.jpeg");
+  display: block;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-weight: 300;
+}
